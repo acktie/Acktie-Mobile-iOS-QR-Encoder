@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Simple QR Encoder for iOS
+author: Tony Nuzzi
+license: See LICENSE file
+copyright: Copyright ©2012 Acktie, LLC, All Rights Reserved
+
+
+# these should not be edited
+name: acktie mobile ios qr encoder
+moduleid: com.acktie.mobile.ios.qr.encoder
+guid: 3db2cca5-6db0-4fe2-8d22-f154e3d563ca
+platform: iphone
+minsdk: 1.8.2

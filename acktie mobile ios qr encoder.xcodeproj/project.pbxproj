@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.h */; };
+		24DD6CFA1134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* ComAcktieMobileIosQrEncoder_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComAcktieMobileIosQrEncoder_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		EFC4B738159BBDE400187DB0 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B724159BBDE400187DB0 /* bitstream.c */; };
+		EFC4B739159BBDE400187DB0 /* bitstream.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B725159BBDE400187DB0 /* bitstream.h */; };
+		EFC4B73A159BBDE400187DB0 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B726159BBDE400187DB0 /* mask.c */; };
+		EFC4B73B159BBDE400187DB0 /* mask.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B727159BBDE400187DB0 /* mask.h */; };
+		EFC4B73C159BBDE400187DB0 /* mmask.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B728159BBDE400187DB0 /* mmask.c */; };
+		EFC4B73D159BBDE400187DB0 /* mmask.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B729159BBDE400187DB0 /* mmask.h */; };
+		EFC4B73E159BBDE400187DB0 /* mqrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B72A159BBDE400187DB0 /* mqrspec.c */; };
+		EFC4B73F159BBDE400187DB0 /* mqrspec.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B72B159BBDE400187DB0 /* mqrspec.h */; };
+		EFC4B740159BBDE400187DB0 /* qrenc.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B72C159BBDE400187DB0 /* qrenc.c */; };
+		EFC4B741159BBDE400187DB0 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B72D159BBDE400187DB0 /* qrencode.c */; };
+		EFC4B742159BBDE400187DB0 /* qrencode.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B72E159BBDE400187DB0 /* qrencode.h */; };
+		EFC4B743159BBDE400187DB0 /* qrencode_inner.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B72F159BBDE400187DB0 /* qrencode_inner.h */; };
+		EFC4B744159BBDE400187DB0 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B730159BBDE400187DB0 /* qrinput.c */; };
+		EFC4B745159BBDE400187DB0 /* qrinput.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B731159BBDE400187DB0 /* qrinput.h */; };
+		EFC4B746159BBDE400187DB0 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B732159BBDE400187DB0 /* qrspec.c */; };
+		EFC4B747159BBDE400187DB0 /* qrspec.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B733159BBDE400187DB0 /* qrspec.h */; };
+		EFC4B748159BBDE400187DB0 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B734159BBDE400187DB0 /* rscode.c */; };
+		EFC4B749159BBDE400187DB0 /* rscode.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B735159BBDE400187DB0 /* rscode.h */; };
+		EFC4B74A159BBDE400187DB0 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B736159BBDE400187DB0 /* split.c */; };
+		EFC4B74B159BBDE400187DB0 /* split.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B737159BBDE400187DB0 /* split.h */; };
+		EFC4B74E159BBFC000187DB0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC4B74D159BBFC000187DB0 /* libz.dylib */; };
+		EFC4B767159BC13E00187DB0 /* example.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B750159BC13E00187DB0 /* example.c */; };
+		EFC4B768159BC13E00187DB0 /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B751159BC13E00187DB0 /* png.c */; };
+		EFC4B769159BC13E00187DB0 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B752159BC13E00187DB0 /* png.h */; };
+		EFC4B76A159BC13E00187DB0 /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B753159BC13E00187DB0 /* pngconf.h */; };
+		EFC4B76B159BC13E00187DB0 /* pngdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B754159BC13E00187DB0 /* pngdebug.h */; };
+		EFC4B76C159BC13E00187DB0 /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B755159BC13E00187DB0 /* pngerror.c */; };
+		EFC4B76D159BC13E00187DB0 /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B756159BC13E00187DB0 /* pngget.c */; };
+		EFC4B76E159BC13E00187DB0 /* pnginfo.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B757159BC13E00187DB0 /* pnginfo.h */; };
+		EFC4B76F159BC13E00187DB0 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B758159BC13E00187DB0 /* pngmem.c */; };
+		EFC4B770159BC13E00187DB0 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B759159BC13E00187DB0 /* pngpread.c */; };
+		EFC4B771159BC13E00187DB0 /* pngpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B75A159BC13E00187DB0 /* pngpriv.h */; };
+		EFC4B772159BC13E00187DB0 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B75B159BC13E00187DB0 /* pngread.c */; };
+		EFC4B773159BC13E00187DB0 /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B75C159BC13E00187DB0 /* pngrio.c */; };
+		EFC4B774159BC13E00187DB0 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B75D159BC13E00187DB0 /* pngrtran.c */; };
+		EFC4B775159BC13E00187DB0 /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B75E159BC13E00187DB0 /* pngrutil.c */; };
+		EFC4B776159BC13E00187DB0 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B75F159BC13E00187DB0 /* pngset.c */; };
+		EFC4B777159BC13E00187DB0 /* pngstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B760159BC13E00187DB0 /* pngstruct.h */; };
+		EFC4B778159BC13E00187DB0 /* pngtest.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B761159BC13E00187DB0 /* pngtest.c */; };
+		EFC4B779159BC13E00187DB0 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B762159BC13E00187DB0 /* pngtrans.c */; };
+		EFC4B77A159BC13E00187DB0 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B763159BC13E00187DB0 /* pngwio.c */; };
+		EFC4B77B159BC13E00187DB0 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B764159BC13E00187DB0 /* pngwrite.c */; };
+		EFC4B77C159BC13E00187DB0 /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B765159BC13E00187DB0 /* pngwtran.c */; };
+		EFC4B77D159BC13F00187DB0 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = EFC4B766159BC13E00187DB0 /* pngwutil.c */; };
+		EFC4B77F159BC1DA00187DB0 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC4B77E159BC1DA00187DB0 /* pnglibconf.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "acktie mobile ios qr encoder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComAcktieMobileIosQrEncoderModule.h; path = Classes/ComAcktieMobileIosQrEncoderModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComAcktieMobileIosQrEncoderModule.m; path = Classes/ComAcktieMobileIosQrEncoderModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComAcktieMobileIosQrEncoderModuleAssets.h; path = Classes/ComAcktieMobileIosQrEncoderModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComAcktieMobileIosQrEncoderModuleAssets.m; path = Classes/ComAcktieMobileIosQrEncoderModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComAcktieMobileIosQrEncoder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComAcktieMobileIosQrEncoder_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libComAcktieMobileIosQrEncoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComAcktieMobileIosQrEncoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC4B724159BBDE400187DB0 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		EFC4B725159BBDE400187DB0 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		EFC4B726159BBDE400187DB0 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		EFC4B727159BBDE400187DB0 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		EFC4B728159BBDE400187DB0 /* mmask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mmask.c; sourceTree = "<group>"; };
+		EFC4B729159BBDE400187DB0 /* mmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmask.h; sourceTree = "<group>"; };
+		EFC4B72A159BBDE400187DB0 /* mqrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mqrspec.c; sourceTree = "<group>"; };
+		EFC4B72B159BBDE400187DB0 /* mqrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqrspec.h; sourceTree = "<group>"; };
+		EFC4B72C159BBDE400187DB0 /* qrenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrenc.c; sourceTree = "<group>"; };
+		EFC4B72D159BBDE400187DB0 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		EFC4B72E159BBDE400187DB0 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		EFC4B72F159BBDE400187DB0 /* qrencode_inner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode_inner.h; sourceTree = "<group>"; };
+		EFC4B730159BBDE400187DB0 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		EFC4B731159BBDE400187DB0 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		EFC4B732159BBDE400187DB0 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		EFC4B733159BBDE400187DB0 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		EFC4B734159BBDE400187DB0 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		EFC4B735159BBDE400187DB0 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		EFC4B736159BBDE400187DB0 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		EFC4B737159BBDE400187DB0 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		EFC4B74D159BBFC000187DB0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EFC4B750159BC13E00187DB0 /* example.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example.c; sourceTree = "<group>"; };
+		EFC4B751159BC13E00187DB0 /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
+		EFC4B752159BC13E00187DB0 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		EFC4B753159BC13E00187DB0 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		EFC4B754159BC13E00187DB0 /* pngdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngdebug.h; sourceTree = "<group>"; };
+		EFC4B755159BC13E00187DB0 /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngerror.c; sourceTree = "<group>"; };
+		EFC4B756159BC13E00187DB0 /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngget.c; sourceTree = "<group>"; };
+		EFC4B757159BC13E00187DB0 /* pnginfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnginfo.h; sourceTree = "<group>"; };
+		EFC4B758159BC13E00187DB0 /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngmem.c; sourceTree = "<group>"; };
+		EFC4B759159BC13E00187DB0 /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngpread.c; sourceTree = "<group>"; };
+		EFC4B75A159BC13E00187DB0 /* pngpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngpriv.h; sourceTree = "<group>"; };
+		EFC4B75B159BC13E00187DB0 /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
+		EFC4B75C159BC13E00187DB0 /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrio.c; sourceTree = "<group>"; };
+		EFC4B75D159BC13E00187DB0 /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrtran.c; sourceTree = "<group>"; };
+		EFC4B75E159BC13E00187DB0 /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrutil.c; sourceTree = "<group>"; };
+		EFC4B75F159BC13E00187DB0 /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
+		EFC4B760159BC13E00187DB0 /* pngstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngstruct.h; sourceTree = "<group>"; };
+		EFC4B761159BC13E00187DB0 /* pngtest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtest.c; sourceTree = "<group>"; };
+		EFC4B762159BC13E00187DB0 /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
+		EFC4B763159BC13E00187DB0 /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
+		EFC4B764159BC13E00187DB0 /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
+		EFC4B765159BC13E00187DB0 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
+		EFC4B766159BC13E00187DB0 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
+		EFC4B77E159BC1DA00187DB0 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC4B74E159BBFC000187DB0 /* libz.dylib in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libComAcktieMobileIosQrEncoder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* acktie mobile ios qr encoder */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4B74F159BC13E00187DB0 /* libpng */,
+				EFC4B74D159BBFC000187DB0 /* libz.dylib */,
+				EFC4B723159BBDE400187DB0 /* qrencode */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "acktie mobile ios qr encoder";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.h */,
+				24DD6CF81134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ComAcktieMobileIosQrEncoder_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		EFC4B723159BBDE400187DB0 /* qrencode */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4B724159BBDE400187DB0 /* bitstream.c */,
+				EFC4B725159BBDE400187DB0 /* bitstream.h */,
+				EFC4B726159BBDE400187DB0 /* mask.c */,
+				EFC4B727159BBDE400187DB0 /* mask.h */,
+				EFC4B728159BBDE400187DB0 /* mmask.c */,
+				EFC4B729159BBDE400187DB0 /* mmask.h */,
+				EFC4B72A159BBDE400187DB0 /* mqrspec.c */,
+				EFC4B72B159BBDE400187DB0 /* mqrspec.h */,
+				EFC4B72C159BBDE400187DB0 /* qrenc.c */,
+				EFC4B72D159BBDE400187DB0 /* qrencode.c */,
+				EFC4B72E159BBDE400187DB0 /* qrencode.h */,
+				EFC4B72F159BBDE400187DB0 /* qrencode_inner.h */,
+				EFC4B730159BBDE400187DB0 /* qrinput.c */,
+				EFC4B731159BBDE400187DB0 /* qrinput.h */,
+				EFC4B732159BBDE400187DB0 /* qrspec.c */,
+				EFC4B733159BBDE400187DB0 /* qrspec.h */,
+				EFC4B734159BBDE400187DB0 /* rscode.c */,
+				EFC4B735159BBDE400187DB0 /* rscode.h */,
+				EFC4B736159BBDE400187DB0 /* split.c */,
+				EFC4B737159BBDE400187DB0 /* split.h */,
+			);
+			name = qrencode;
+			path = "qrencode-3.3.1";
+			sourceTree = "<group>";
+		};
+		EFC4B74F159BC13E00187DB0 /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4B77E159BC1DA00187DB0 /* pnglibconf.h */,
+				EFC4B750159BC13E00187DB0 /* example.c */,
+				EFC4B751159BC13E00187DB0 /* png.c */,
+				EFC4B752159BC13E00187DB0 /* png.h */,
+				EFC4B753159BC13E00187DB0 /* pngconf.h */,
+				EFC4B754159BC13E00187DB0 /* pngdebug.h */,
+				EFC4B755159BC13E00187DB0 /* pngerror.c */,
+				EFC4B756159BC13E00187DB0 /* pngget.c */,
+				EFC4B757159BC13E00187DB0 /* pnginfo.h */,
+				EFC4B758159BC13E00187DB0 /* pngmem.c */,
+				EFC4B759159BC13E00187DB0 /* pngpread.c */,
+				EFC4B75A159BC13E00187DB0 /* pngpriv.h */,
+				EFC4B75B159BC13E00187DB0 /* pngread.c */,
+				EFC4B75C159BC13E00187DB0 /* pngrio.c */,
+				EFC4B75D159BC13E00187DB0 /* pngrtran.c */,
+				EFC4B75E159BC13E00187DB0 /* pngrutil.c */,
+				EFC4B75F159BC13E00187DB0 /* pngset.c */,
+				EFC4B760159BC13E00187DB0 /* pngstruct.h */,
+				EFC4B761159BC13E00187DB0 /* pngtest.c */,
+				EFC4B762159BC13E00187DB0 /* pngtrans.c */,
+				EFC4B763159BC13E00187DB0 /* pngwio.c */,
+				EFC4B764159BC13E00187DB0 /* pngwrite.c */,
+				EFC4B765159BC13E00187DB0 /* pngwtran.c */,
+				EFC4B766159BC13E00187DB0 /* pngwutil.c */,
+			);
+			name = libpng;
+			path = lpng1511;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ComAcktieMobileIosQrEncoder_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.h in Headers */,
+				EFC4B739159BBDE400187DB0 /* bitstream.h in Headers */,
+				EFC4B73B159BBDE400187DB0 /* mask.h in Headers */,
+				EFC4B73D159BBDE400187DB0 /* mmask.h in Headers */,
+				EFC4B73F159BBDE400187DB0 /* mqrspec.h in Headers */,
+				EFC4B742159BBDE400187DB0 /* qrencode.h in Headers */,
+				EFC4B743159BBDE400187DB0 /* qrencode_inner.h in Headers */,
+				EFC4B745159BBDE400187DB0 /* qrinput.h in Headers */,
+				EFC4B747159BBDE400187DB0 /* qrspec.h in Headers */,
+				EFC4B749159BBDE400187DB0 /* rscode.h in Headers */,
+				EFC4B74B159BBDE400187DB0 /* split.h in Headers */,
+				EFC4B769159BC13E00187DB0 /* png.h in Headers */,
+				EFC4B76A159BC13E00187DB0 /* pngconf.h in Headers */,
+				EFC4B76B159BC13E00187DB0 /* pngdebug.h in Headers */,
+				EFC4B76E159BC13E00187DB0 /* pnginfo.h in Headers */,
+				EFC4B771159BC13E00187DB0 /* pngpriv.h in Headers */,
+				EFC4B777159BC13E00187DB0 /* pngstruct.h in Headers */,
+				EFC4B77F159BC1DA00187DB0 /* pnglibconf.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* acktie mobile ios qr encoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "acktie mobile ios qr encoder" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "acktie mobile ios qr encoder";
+			productName = "acktie mobile ios qr encoder";
+			productReference = D2AAC07E0554694100DB518D /* libComAcktieMobileIosQrEncoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "acktie mobile ios qr encoder" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* acktie mobile ios qr encoder */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* acktie mobile ios qr encoder */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* ComAcktieMobileIosQrEncoderModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* ComAcktieMobileIosQrEncoderModuleAssets.m in Sources */,
+				EFC4B738159BBDE400187DB0 /* bitstream.c in Sources */,
+				EFC4B73A159BBDE400187DB0 /* mask.c in Sources */,
+				EFC4B73C159BBDE400187DB0 /* mmask.c in Sources */,
+				EFC4B73E159BBDE400187DB0 /* mqrspec.c in Sources */,
+				EFC4B740159BBDE400187DB0 /* qrenc.c in Sources */,
+				EFC4B741159BBDE400187DB0 /* qrencode.c in Sources */,
+				EFC4B744159BBDE400187DB0 /* qrinput.c in Sources */,
+				EFC4B746159BBDE400187DB0 /* qrspec.c in Sources */,
+				EFC4B748159BBDE400187DB0 /* rscode.c in Sources */,
+				EFC4B74A159BBDE400187DB0 /* split.c in Sources */,
+				EFC4B767159BC13E00187DB0 /* example.c in Sources */,
+				EFC4B768159BC13E00187DB0 /* png.c in Sources */,
+				EFC4B76C159BC13E00187DB0 /* pngerror.c in Sources */,
+				EFC4B76D159BC13E00187DB0 /* pngget.c in Sources */,
+				EFC4B76F159BC13E00187DB0 /* pngmem.c in Sources */,
+				EFC4B770159BC13E00187DB0 /* pngpread.c in Sources */,
+				EFC4B772159BC13E00187DB0 /* pngread.c in Sources */,
+				EFC4B773159BC13E00187DB0 /* pngrio.c in Sources */,
+				EFC4B774159BC13E00187DB0 /* pngrtran.c in Sources */,
+				EFC4B775159BC13E00187DB0 /* pngrutil.c in Sources */,
+				EFC4B776159BC13E00187DB0 /* pngset.c in Sources */,
+				EFC4B778159BC13E00187DB0 /* pngtest.c in Sources */,
+				EFC4B779159BC13E00187DB0 /* pngtrans.c in Sources */,
+				EFC4B77A159BC13E00187DB0 /* pngwio.c in Sources */,
+				EFC4B77B159BC13E00187DB0 /* pngwrite.c in Sources */,
+				EFC4B77C159BC13E00187DB0 /* pngwtran.c in Sources */,
+				EFC4B77D159BC13F00187DB0 /* pngwutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* acktie mobile ios qr encoder */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ComAcktieMobileIosQrEncoder.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComAcktieMobileIosQrEncoder_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComAcktieMobileIosQrEncoder;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/ComAcktieMobileIosQrEncoder.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComAcktieMobileIosQrEncoder_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComAcktieMobileIosQrEncoder;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ComAcktieMobileIosQrEncoder.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComAcktieMobileIosQrEncoder_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComAcktieMobileIosQrEncoder;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/ComAcktieMobileIosQrEncoder.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComAcktieMobileIosQrEncoder_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComAcktieMobileIosQrEncoder;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "acktie mobile ios qr encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "acktie mobile ios qr encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
