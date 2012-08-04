@@ -81,6 +81,10 @@ Use this property to pass in the text that will be converted to a QR Code.  The 
 ## Known issues
 None
 
+## Change Log
+*  1.0 Initial Release
+*  1.1 Added UTF-8 Byte order mark (used for more accurate decodeing) and useJISEndoding option.
+
 ## Author
 
 Tony Nuzzi @ Acktie
