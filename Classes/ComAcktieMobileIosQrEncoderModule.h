@@ -13,5 +13,6 @@
 @property(nonatomic,readwrite,assign) int   margin;
 @property(nonatomic,readwrite,assign) float size;
 @property(nonatomic,readwrite,assign) QRecLevel correction;
+@property(nonatomic,readwrite,assign) BOOL useJISEncoding;
 
 @end

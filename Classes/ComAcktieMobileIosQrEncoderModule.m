@@ -14,6 +14,7 @@
 @synthesize margin;
 @synthesize size;
 @synthesize correction;
+@synthesize useJISEncoding;
 
 - (void)drawQRCode:(QRcode *)qrCode context:(CGContextRef)ctx
 {
@@ -47,8 +48,17 @@
 		return nil;
 	}
 	
-    // encode String to QR
-	QRcode *qrCode = QRcode_encodeString([text UTF8String], 0, correction, QR_MODE_8, YES);
+    NSString *sourceString = nil;
+    QRcode *qrCode = nil;
+    if([self useJISEncoding] && [text canBeConvertedToEncoding:NSShiftJISStringEncoding])
+    {        
+        qrCode = QRcode_encodeString([text cStringUsingEncoding: NSShiftJISStringEncoding], 0, correction, QR_MODE_KANJI, YES);
+    }
+    else
+    {
+        sourceString = [[NSString alloc] initWithFormat:@"\357\273\277%@", text];
+        qrCode = QRcode_encodeString([sourceString UTF8String], 0, correction, QR_MODE_8, YES);
+    }
     
 	if (!qrCode) {
         NSLog([NSString stringWithFormat:@"QRcode is nil!"]);
@@ -115,6 +125,12 @@
         
     }
     NSLog([NSString stringWithFormat:@"correction: %d", correction]);
+    
+    if ([args objectForKey:@"useJISEncoding"] != nil) 
+    {
+        [self setUseJISEncoding:[TiUtils boolValue:[args objectForKey:@"useJISEncoding"]]];
+    }
+    NSLog([NSString stringWithFormat:@"useJISEncoding: %d", useJISEncoding]);
 }
 
 #pragma mark Internal
@@ -141,6 +157,7 @@
     [self setSize:300.0f];
     [self setMargin:1];
     [self setCorrection: QR_ECLEVEL_L];
+    [self setUseJISEncoding:false];
 	
 	NSLog(@"[INFO] %@ loaded",self);
 }
