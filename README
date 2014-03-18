@@ -1,80 +1,98 @@
-<div>
-<h1>Acktie Mobile QR Encoder Module (iOS)</h1>
-<h2>Example</h2>
-A working example of how to use this module can be found on Github at <a href="https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example">https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example</a>.
-<h2>Description</h2>
+# Acktie Mobile QR Encoder Module (iOS)
+
+## Example
+
+A working example of how to use this module can be found on Github at
+[https://github.com/acktie/Acktie-Mobile-QR-Encoder-
+Example](https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example).
+
+## Description
+
 This module allows for quick generation of QR Codes on your mobile device.
-<h2>Accessing the Acktie Mobile Airprint Module</h2>
-To get started, review the <a href="http://docs.appcelerator.com/titanium/2.0/#!/guide/Using_Titanium_Modules">module install instructions</a> on the Appcelerator website.
 
-To access this module from JavaScript, you would do the following:
-<pre><code>var qrEncoder = require('com.acktie.mobile.ios.qr.encoder'); </code></pre>
+## Accessing the Acktie Mobile Airprint Module
+
+To get started, review the [module install instructions](http://docs.appcelera
+tor.com/titanium/2.0/#!/guide/Using_Titanium_Modules) on the Appcelerator
+website. To access this module from JavaScript, you would do the following:
+
+    
+    var qrEncoder = require('com.acktie.mobile.ios.qr.encoder'); 
+
 The qrEncoder variable is a reference to the Module object.
-<h2>Reference</h2>
+
+## Reference
+
 The following are the Javascript functions you can call with the module.
-<h3>init</h3>
-This options initializes the QR Encoder. In this option you can set the size, margin, and correction level (see below for detail).
-<h4>Properties</h4>
-The following are the valid properties that can be passed into the print function.
-<h4>size (optional)</h4>
-This property is used set the size of the returned QR Encoded PNG blob. The size is a single value with matching height and width.
 
-For example, if 100 is entered. The QR Encoded PNG will be of size 100 height and 100 width. However, you can use an imageview to display it however you want.
+### init
 
-size: 100
+This options initializes the QR Encoder. In this option you can set the size,
+margin, and correction level (see below for detail).
 
-The default is 300 x 300.
+#### Properties
 
-<em>Note</em>: If you intent to use the module to display QR's that will be read by other mobile devices it is recommended that you create a QR bigger then you need and just scale it down in the image view. This will give you a clear QR Code.
-<h4>margin (optional)</h4>
-The margin is a border around the QR code. You can size the margin to your needs or even remove it by passing in 0.
+The following are the valid properties that can be passed into the print
+function.
 
-Example:
+#### size (optional)
 
-margin: 3
+This property is used set the size of the returned QR Encoded PNG blob. The
+size is a single value with matching height and width. For example, if 100 is
+entered. The QR Encoded PNG will be of size 100 height and 100 width. However,
+you can use an imageview to display it however you want. size: 100 The default
+is 300 x 300. _Note_: If you intent to use the module to display QR's that
+will be read by other mobile devices it is recommended that you create a QR
+bigger then you need and just scale it down in the image view. This will give
+you a clear QR Code.
 
-The default is 1
-<h4>correction (optional)</h4>
-This property will set the correction level of the QR Code rendered. The higher correction level the more dense the QR code is however it allow for redundent data so part of the QR code may be missing or damaged and it will still be readable.
-<ul>
-	<li>Level L (Low) 7% of codewords can be restored.</li>
-	<li>Level M (Medium) 15% of codewords can be restored.</li>
-	<li>Level Q (Quartile) 25% of codewords can be restored.</li>
-	<li>Level H (High) 30% of codewords can be restored.</li>
-</ul>
-For more information see (Wikipedia)[http://en.wikipedia.org/wiki/QR<em>code#Error</em>correction]
+#### margin (optional)
 
-Example:
+The margin is a border around the QR code. You can size the margin to your
+needs or even remove it by passing in 0. Example: margin: 3 The default is 1
 
-correction: 'M'
+#### correction (optional)
 
-Valid input is L, M, Q or H
+This property will set the correction level of the QR Code rendered. The
+higher correction level the more dense the QR code is however it allow for
+redundent data so part of the QR code may be missing or damaged and it will
+still be readable.
 
-The default is 'L',
-<h4>useJISEncoding (optional):</h4>
-This option is used to encode the QR code result with the Shift JIS encoding. This is necessary when encoding Kanji Characters and UTF-8 is not sufficient. By default the QR encoder will use UTF-8. For most circumstances UTF-8 will work fine.
+  * Level L (Low) 7% of codewords can be restored.
+  * Level M (Medium) 15% of codewords can be restored.
+  * Level Q (Quartile) 25% of codewords can be restored.
+  * Level H (High) 30% of codewords can be restored.
+For more information see
+(Wikipedia)[http://en.wikipedia.org/wiki/QR_code#Error_correction] Example:
+correction: 'M' Valid input is L, M, Q or H The default is 'L',
 
-Example:
+#### useJISEncoding (optional):
 
-useJISEncoding: true,
+This option is used to encode the QR code result with the Shift JIS encoding.
+This is necessary when encoding Kanji Characters and UTF-8 is not sufficient.
+By default the QR encoder will use UTF-8. For most circumstances UTF-8 will
+work fine. Example: useJISEncoding: true, By default this value is false.
 
-By default this value is false.
-<h3>stringToQR</h3>
-This function is used to generate the QR Code and return it as a PNG blob. The only option for this function is text.
-<h4>text (required)</h4>
-Use this property to pass in the text that will be converted to a QR Code. The limit is 7000 characters.
-<h2>Known issues</h2>
+### stringToQR
+
+This function is used to generate the QR Code and return it as a PNG blob. The
+only option for this function is text.
+
+#### text (required)
+
+Use this property to pass in the text that will be converted to a QR Code. The
+limit is 7000 characters.
+
+## Known issues
+
 None
-<h2>Change Log</h2>
-<ul>
-	<li>1.0 Initial Release</li>
-	<li>1.1 Added UTF-8 Byte order mark (used for more accurate decodeing) and useJISEndoding option.</li>
-</ul>
-<h2>Author</h2>
-Tony Nuzzi @ Acktie
 
-Twitter: @Acktie
+## Change Log
 
-Email: support@acktie.com
+  * 1.0 Initial Release
+  * 1.1 Added UTF-8 Byte order mark (used for more accurate decodeing) and useJISEndoding option.
 
-</div>
+## Author
+
+Tony Nuzzi @ Acktie Twitter: @Acktie Email: support@acktie.com
+
