@@ -3,17 +3,15 @@
 ## Example
 
 A working example of how to use this module can be found on Github at
-[https://github.com/acktie/Acktie-Mobile-QR-Encoder-
-Example](https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example).
+[https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example](https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example).
 
 ## Description
 
 This module allows for quick generation of QR Codes on your mobile device.
 
-## Accessing the Acktie Mobile Airprint Module
+## Accessing the Acktie Mobile QR Encoder Module
 
-To get started, review the [module install instructions](http://docs.appcelera
-tor.com/titanium/2.0/#!/guide/Using_Titanium_Modules) on the Appcelerator
+To get started, review the [module install instructions](http://docs.appcelerator.com/titanium/2.0/#!/guide/Using_Titanium_Modules) on the Appcelerator
 website. To access this module from JavaScript, you would do the following:
 
     
