@@ -17,7 +17,7 @@ website. To access this module from JavaScript, you would do the following:
     
     var qrEncoder = require('com.acktie.mobile.ios.qr.encoder'); 
 
-The qrEncoder variable is a reference to the Module object.
+The qrEncoder variable is a reference to the module object.
 
 ## Reference
 
