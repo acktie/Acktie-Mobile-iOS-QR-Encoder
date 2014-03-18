@@ -92,5 +92,16 @@ None
 
 ## Author
 
-Tony Nuzzi @ Acktie Twitter: @Acktie Email: support@acktie.com
+Tony Nuzzi @ Acktie 
+Twitter: @Acktie 
+Email: support@acktie.com
+
+Code licensed under Apache License v2.0, documentation under CC BY 3.0.
+
+Libaries Used:
+
+qrencode: Copyright (C) 2006-2012 Kentaro Fukuchi
+libpng version 1.5.11 : Copyright (c) 1998-2012 Glenn Randers-Pehrson
+  * (Version 0.96 Copyright (c) 1996, 1997 Andreas Dilger)
+  * (Version 0.88 Copyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.)
 
