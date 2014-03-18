@@ -1,151 +1,80 @@
-Appcelerator Titanium iPhone Module Project
-===========================================
+<div>
+<h1>Acktie Mobile QR Encoder Module (iOS)</h1>
+<h2>Example</h2>
+A working example of how to use this module can be found on Github at <a href="https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example">https://github.com/acktie/Acktie-Mobile-QR-Encoder-Example</a>.
+<h2>Description</h2>
+This module allows for quick generation of QR Codes on your mobile device.
+<h2>Accessing the Acktie Mobile Airprint Module</h2>
+To get started, review the <a href="http://docs.appcelerator.com/titanium/2.0/#!/guide/Using_Titanium_Modules">module install instructions</a> on the Appcelerator website.
 
-This is a skeleton Titanium Mobile iPhone module project.  Modules can be 
-used to extend the functionality of Titanium by providing additional native
-code that is compiled into your application at build time and can expose certain
-APIs into JavaScript. 
+To access this module from JavaScript, you would do the following:
+<pre><code>var qrEncoder = require('com.acktie.mobile.ios.qr.encoder'); </code></pre>
+The qrEncoder variable is a reference to the Module object.
+<h2>Reference</h2>
+The following are the Javascript functions you can call with the module.
+<h3>init</h3>
+This options initializes the QR Encoder. In this option you can set the size, margin, and correction level (see below for detail).
+<h4>Properties</h4>
+The following are the valid properties that can be passed into the print function.
+<h4>size (optional)</h4>
+This property is used set the size of the returned QR Encoded PNG blob. The size is a single value with matching height and width.
 
-MODULE NAMING
---------------
+For example, if 100 is entered. The QR Encoded PNG will be of size 100 height and 100 width. However, you can use an imageview to display it however you want.
 
-Choose a unique module id for your module.  This ID usually follows a namespace
-convention using DNS notation.  For example, com.appcelerator.module.test.  This
-ID can only be used once by all public modules in Titanium.
+size: 100
 
+The default is 300 x 300.
 
-COMPONENTS
------------
+<em>Note</em>: If you intent to use the module to display QR's that will be read by other mobile devices it is recommended that you create a QR bigger then you need and just scale it down in the image view. This will give you a clear QR Code.
+<h4>margin (optional)</h4>
+The margin is a border around the QR code. You can size the margin to your needs or even remove it by passing in 0.
 
-Components that are exposed by your module must follow a special naming convention.
-A component (widget, proxy, etc) must be named with the pattern:
-
-	Ti<ModuleName><ComponentName>Proxy
-
-For example, if you component was called Foo, your proxy would be named:
-
-	TiMyfirstFooProxy
-	
-For view proxies or widgets, you must create both a view proxy and a view implementation. 
-If you widget was named proxy, you would create the following files:
-
-	TiMyfirstFooProxy.h
-	TiMyfirstFooProxy.m
-	TiMyfirstFoo.h
-	TiMyfirstFoo.m
-	
-The view implementation is named the same except it does contain the suffix `Proxy`.  
-
-View implementations extend the Titanium base class `TiUIView`.  View Proxies extend the
-Titanium base class `TiUIViewProxy` or `TiUIWidgetProxy`.  
-
-For proxies that are simply native objects that can be returned to JavaScript, you can 
-simply extend `TiProxy` and no view implementation is required.
-
-
-GET STARTED
-------------
-
-1. Edit manifest with the appropriate details about your module.
-2. Edit LICENSE to add your license details.
-3. Place any assets (such as PNG files) that are required in the assets folder.
-4. Edit the titanium.xcconfig and make sure you're building for the right Titanium version.
-5. Code and build.
-
-BUILD TIME COMPILER CONFIG
---------------------------
-
-You can edit the file `module.xcconfig` to include any build time settings that should be
-set during application compilation that your module requires.  This file will automatically get `#include` in the main application project.  
-
-For more information about this file, please see the Apple documentation at:
-
-<http://developer.apple.com/mac/library/documentation/DeveloperTools/Conceptual/XcodeBuildSystem/400-Build_Configurations/build_configs.html>
-
-
-DOCUMENTATION FOR YOUR MODULE
------------------------------
-
-You should provide at least minimal documentation for your module in `documentation` folder using the Markdown syntax.
-
-For more information on the Markdown syntax, refer to this documentation at:
-
-<http://daringfireball.net/projects/markdown/>
-
-
-TEST HARNESS EXAMPLE FOR YOUR MODULE
-------------------------------------
-
-The `example` directory contains a skeleton application test harness that can be 
-used for testing and providing an example of usage to the users of your module.
-
-
-INSTALL YOUR MODULE
---------------------
-
-1. Run `build.py` which creates your distribution
-2. cd to `/Library/Application Support/Titanium`
-3. copy this zip file into the folder of your Titanium SDK
-
-REGISTER YOUR MODULE
----------------------
-
-Register your module with your application by editing `tiapp.xml` and adding your module.
 Example:
 
-<modules>
-	<module version="0.1">com.acktie.mobile.ios.qr.encoder</module>
-</modules>
+margin: 3
 
-When you run your project, the compiler will know automatically compile in your module
-dependencies and copy appropriate image assets into the application.
+The default is 1
+<h4>correction (optional)</h4>
+This property will set the correction level of the QR Code rendered. The higher correction level the more dense the QR code is however it allow for redundent data so part of the QR code may be missing or damaged and it will still be readable.
+<ul>
+	<li>Level L (Low) 7% of codewords can be restored.</li>
+	<li>Level M (Medium) 15% of codewords can be restored.</li>
+	<li>Level Q (Quartile) 25% of codewords can be restored.</li>
+	<li>Level H (High) 30% of codewords can be restored.</li>
+</ul>
+For more information see (Wikipedia)[http://en.wikipedia.org/wiki/QR<em>code#Error</em>correction]
 
-USING YOUR MODULE IN CODE
--------------------------
+Example:
 
-To use your module in code, you will need to require it. 
+correction: 'M'
 
-For example,
+Valid input is L, M, Q or H
 
-	var my_module = require('com.acktie.mobile.ios.qr.encoder');
-	my_module.foo();
+The default is 'L',
+<h4>useJISEncoding (optional):</h4>
+This option is used to encode the QR code result with the Shift JIS encoding. This is necessary when encoding Kanji Characters and UTF-8 is not sufficient. By default the QR encoder will use UTF-8. For most circumstances UTF-8 will work fine.
 
-WRITING PURE JS NATIVE MODULES
-------------------------------
+Example:
 
-You can write a pure JavaScript "natively compiled" module.  This is nice if you
-want to distribute a JS module pre-compiled.
+useJISEncoding: true,
 
-To create a module, create a file named com.acktie.mobile.ios.qr.encoder.js under the assets folder.
-This file must be in the Common JS format.  For example:
+By default this value is false.
+<h3>stringToQR</h3>
+This function is used to generate the QR Code and return it as a PNG blob. The only option for this function is text.
+<h4>text (required)</h4>
+Use this property to pass in the text that will be converted to a QR Code. The limit is 7000 characters.
+<h2>Known issues</h2>
+None
+<h2>Change Log</h2>
+<ul>
+	<li>1.0 Initial Release</li>
+	<li>1.1 Added UTF-8 Byte order mark (used for more accurate decodeing) and useJISEndoding option.</li>
+</ul>
+<h2>Author</h2>
+Tony Nuzzi @ Acktie
 
-	exports.echo = function(s)
-	{
-		return s;
-	};
-	
-Any functions and properties that are exported will be made available as part of your
-module.  All other code inside your JS will be private to your module.
+Twitter: @Acktie
 
-For pure JS module, you don't need to modify any of the Objective-C module code. You
-can leave it as-is and build.
+Email: support@acktie.com
 
-TESTING YOUR MODULE
--------------------
-
-Run the `titanium.py` script to test your module or test from within XCode.
-To test with the script, execute:
-
-	titanium run --dir=YOURMODULEDIR
-	
-
-This will execute the app.js in the example folder as a Titanium application.
-
-
-DISTRIBUTING YOUR MODULE
--------------------------
-
-Currently, you will need to manually distribution your module distribution zip file directly. However, in the near future, we will make module distribution and sharing built-in to Titanium Developer and in the Titanium Marketplace!
-
-
-Cheers!
+</div>
