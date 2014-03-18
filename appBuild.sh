@@ -1,1 +1,1 @@
-python build.py;rm -rf /Library/Application\ Support/Titanium/modules/iphone/com.acktie.mobile.ios.qr.encoder/; unzip com.acktie.mobile.ios.qr.encoder-iphone-1.1.zip -d /Library/Application\ Support/Titanium/;
+python build.py;rm -rf ~/Library/Application\ Support/Titanium/modules/iphone/com.acktie.mobile.ios.qr.encoder/; unzip com.acktie.mobile.ios.qr.encoder-iphone-1.1.zip -d ~/Library/Application\ Support/Titanium/;
