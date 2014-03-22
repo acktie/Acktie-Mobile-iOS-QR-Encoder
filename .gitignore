@@ -13,5 +13,6 @@ build
 .svn
 _svn
 svn-commit*.tmp
-acktie mobile ios qr encoder.xcodeproj/project.xcworkspace/xcuserdata
+acktie mobile ios qr encoder.xcodeproj/project.xcworkspace
+acktie mobile ios qr encoder.xcodeproj/xcuserdata
 .DS_Store
